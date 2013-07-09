@@ -1,7 +1,7 @@
 var fs = require("fs");
 
-var file = fs.readFile("index.html");
-file = file.buf.toString();
+var file = fs.readFile("./index.html");
+// file = file.buf.toString();
 
 var express = require('express');
 
