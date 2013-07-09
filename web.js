@@ -1,14 +1,13 @@
 var fs = require("fs");
 
 var file = fs.readFile("./index.html");
-// file = file.buf.toString();
+var data = file.buf.toString();
 
 var express = require('express');
 
 var app = express.createServer(express.logger());
 
 app.get('/', function(request, response) {
-var data = "test";
   response.send(data);
 });
 
